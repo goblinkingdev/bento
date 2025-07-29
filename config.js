@@ -11,7 +11,7 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'John',
+	name: 'GoblinKing',
 	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
@@ -23,17 +23,17 @@ const CONFIG = {
 	greetingNight: 'Go to Sleep!',
 
 	// Layout
-	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
+	bentoLayout: 'buttons', // 'bento', 'lists', 'buttons'
 
 	// Weather
-	weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
+	weatherKey: 'c5036df0fa49226c24c538297a33216c', // Write here your API Key
 	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
 	weatherUnit: 'C', // 'F', 'C'
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
-	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-	defaultLatitude: '37.775',
-	defaultLongitude: '-122.419',
+	trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
+	defaultLatitude: '40.418',
+	defaultLongitude: '-3.702',
 
 	// Autochange
 	autoChangeTheme: true,
@@ -53,6 +53,45 @@ const CONFIG = {
 	firstButtonsContainer: [
 		{
 			id: '1',
+			name: 'YouTube',
+			icon: 'youtube',
+			link: 'https://youtube.com/',
+		},
+		{
+			id: '2',
+			name: 'Twitter',
+			icon: 'twitter',
+			link: 'https://x.com/',
+		},
+		{
+			id: '3',
+			name: 'Reddit',
+			icon: 'glasses',
+			link: 'https://reddit.com',
+		},
+		{
+			id: '4',
+			name: 'Music',
+			icon: 'headphones',
+			link: 'https://open.spotify.com',
+		},
+		{
+			id: '5',
+			name: 'Discord',
+			icon: 'bot',
+			link: 'https://discord.com/app',
+		},
+		{
+			id: '6',
+			name: 'Gmail',
+			icon: 'mail',
+			link: 'https://mail.google.com/',
+		},
+	],
+
+	secondButtonsContainer: [
+		{
+			id: '1',
 			name: 'Github',
 			icon: 'github',
 			link: 'https://github.com/',
@@ -65,60 +104,21 @@ const CONFIG = {
 		},
 		{
 			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
-		},
-		{
-			id: '4',
 			name: 'Calendar',
 			icon: 'calendar',
 			link: 'https://calendar.google.com/calendar/r',
 		},
 		{
-			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
-		},
-		{
-			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
-		},
-	],
-
-	secondButtonsContainer: [
-		{
-			id: '1',
-			name: 'Music',
-			icon: 'headphones',
-			link: 'https://open.spotify.com',
-		},
-		{
-			id: '2',
-			name: 'twitter',
-			icon: 'twitter',
-			link: 'https://twitter.com/',
-		},
-		{
-			id: '3',
-			name: 'bot',
-			icon: 'bot',
-			link: 'https://discord.com/app',
-		},
-		{
 			id: '4',
+			name: 'Todoist',
+			icon: 'trello',
+			link: 'https://todoist.com',
+		},
+		{
+			id: '5',
 			name: 'Amazon',
 			icon: 'shopping-bag',
 			link: 'https://amazon.com/',
-		},
-		{
-			id: '5',
-			name: 'Hashnode',
-			icon: 'pen-tool',
-			link: 'https://hashnode.com/',
 		},
 		{
 			id: '6',

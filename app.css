@@ -102,8 +102,8 @@ body {
   height: 85vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 30px;
+  grid-template-rows: 0.8fr 0.8fr 0.6fr 1.8fr;
+  grid-gap: 15px;
   padding: 20px;
 }
 
@@ -136,11 +136,55 @@ body {
   justify-content: center;
 }
 
+.searchBlock {
+  grid-row: 3;
+  grid-column: 1 / span 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+
+#searchForm {
+  display: flex;
+  width: 50%;
+  gap: 10px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--cards);
+  color: var(--fg);
+  font-size: var(--fg-list);
+}
+
+#searchInput:focus {
+  outline: 2px solid var(--accent);
+}
+
+#searchForm button {
+  background-color: var(--cards);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: var(--fg);
+}
+
+#searchForm button:hover {
+  background-color: var(--accent);
+  color: var(--sfg);
+}
+
 .date {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin: 15px;
 }
 
 .weather {
@@ -206,7 +250,7 @@ body {
 }
 
 .linksBlock {
-  grid-row: 3 / span 2;
+  grid-row: 4 / span 1;
   grid-column: 1 / span 4;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
